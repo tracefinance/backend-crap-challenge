@@ -305,5 +305,5 @@ PUT /wallets/{walletId}/policy
 ## Submissão
 
 1. Dê permissão de leitura para `@tracefinancedev` no repositório.  
-2. Envie e-mail para `backend@trace.finance` com assunto **Vaga Back-end Pleno** e a URL do repo.  
+2. Envie e-mail para `backend@trace.finance` com assunto **Vaga Back-end** e a URL do repo.  
 3. No README, explique suas principais decisões de arquitetura e pontos de atenção.
