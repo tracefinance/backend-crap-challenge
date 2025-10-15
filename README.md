@@ -1,4 +1,4 @@
-# 🚀 Back-end Challenge — Payment API (Pleno)
+# 🚀 Back-end Challenge — Payment API
 
 Desafio para avaliar engenheiros(as) back-end na Trace Finance.
 
