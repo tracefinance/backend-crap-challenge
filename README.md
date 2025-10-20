@@ -126,7 +126,7 @@ Regras:
 - Quando duas ou mais requisições acontecerem quase ao mesmo tempo para a mesma carteira, o consumo de limite não pode ultrapassar o valor permitido.  
 - Caso julgue necessário, você pode incluir **campos adicionais no corpo ou cabeçalhos da requisição** para permitir a identificação única de tentativas de pagamento.  
 
-**200 OK**
+**201 Created**
 ```json
 {
   "paymentId": "uuid",
