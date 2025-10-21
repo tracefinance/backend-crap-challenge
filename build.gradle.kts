@@ -20,7 +20,6 @@ dependencies {
     implementation("io.ktor:ktor-server-netty:2.3.7")
     implementation("io.ktor:ktor-server-content-negotiation:2.3.7")
     implementation("io.ktor:ktor-serialization-jackson:2.3.7")
-    implementation("org.litote.kmongo:kmongo-coroutine:4.11.0")
     
     testImplementation("io.ktor:ktor-server-tests:2.3.7")
     testImplementation("org.jetbrains.kotlin:kotlin-test:1.9.20")

@@ -26,33 +26,33 @@ fun Application.module() {
         // TODO: Implementar rotas da API de pagamentos
         route("/wallets") {
             post {
-                call.respond(mapOf("message" to "Criar carteira - TODO"))
+                //TODO: Implementar endpoint
             }
             
             get("/{walletId}/limits") {
-                call.respond(mapOf("message" to "Consultar limites - TODO"))
+                //TODO: Implementar endpoint
             }
             
             put("/{walletId}/policy") {
-                call.respond(mapOf("message" to "Associar política - TODO"))
+                //TODO: Implementar endpoint
             }
             
             post("/{walletId}/payments") {
-                call.respond(mapOf("message" to "Realizar pagamento - TODO"))
+                //TODO: Implementar endpoint
             }
             
             get("/{walletId}/payments") {
-                call.respond(mapOf("message" to "Listar pagamentos - TODO"))
+                //TODO: Implementar endpoint
             }
         }
         
         route("/policies") {
             post {
-                call.respond(mapOf("message" to "Criar política - TODO"))
+                //TODO: Implementar endpoint
             }
             
             get {
-                call.respond(mapOf("message" to "Listar políticas - TODO"))
+                //TODO: Implementar endpoint
             }
         }
     }
