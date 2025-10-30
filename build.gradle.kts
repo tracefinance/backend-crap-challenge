@@ -22,7 +22,8 @@ dependencies {
     implementation("io.ktor:ktor-serialization-jackson:2.3.7")
     implementation("ch.qos.logback:logback-classic:1.5.18")
     implementation("net.logstash.logback:logstash-logback-encoder:8.1")
-    
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.20.0")
+
     // Koin para DI
     implementation("io.insert-koin:koin-ktor:3.5.1")
     implementation("io.insert-koin:koin-logger-slf4j:3.5.1")

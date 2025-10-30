@@ -1,2 +1,2 @@
-rootProject.name = "payment-api"
+rootProject.name = "backend-crap-challenge"
 

@@ -1,40 +1,19 @@
-version: '3.8'
-
 services:
   mongodb:
-    image: mongo:7.0
+    image: mongo
     container_name: payment-api-mongo
     restart: unless-stopped
     ports:
       - "27017:27017"
     environment:
-      # Problema 1: Credenciais hardcoded (inseguro)
-      MONGO_INITDB_ROOT_USERNAME: admin
-      MONGO_INITDB_ROOT_PASSWORD: password123
-      MONGO_INITDB_DATABASE: payment_api
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+      - MONGO_INITDB_DATABASE=payment_api
     volumes:
-      - mongodb_data:/data/db
       - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./mongod.conf:/etc/mongo/mongod.conf:ro
     networks:
       - payment-network
-
-  # Problema 2: Aplicação rodando como root
-  payment-api:
-    build: .
-    container_name: payment-api-app
-    restart: unless-stopped
-    ports:
-      - "8080:8080"
-    environment:
-      # Problema 3: Configurações de ambiente hardcoded
-      MONGO_URI: mongodb://admin:password123@mongodb:27017/payment_api?authSource=admin
-    depends_on:
-      - mongodb
-    networks:
-      - payment-network
-
-volumes:
-  mongodb_data:
 
 networks:
   payment-network:
