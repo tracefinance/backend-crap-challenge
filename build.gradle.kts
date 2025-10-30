@@ -20,7 +20,18 @@ dependencies {
     implementation("io.ktor:ktor-server-netty:2.3.7")
     implementation("io.ktor:ktor-server-content-negotiation:2.3.7")
     implementation("io.ktor:ktor-serialization-jackson:2.3.7")
+    implementation("ch.qos.logback:logback-classic:1.5.18")
+    implementation("net.logstash.logback:logstash-logback-encoder:8.1")
     
+    // Koin para DI
+    implementation("io.insert-koin:koin-ktor:3.5.1")
+    implementation("io.insert-koin:koin-logger-slf4j:3.5.1")
+    
+    // MongoDB
+    implementation("org.litote.kmongo:kmongo:4.11.0")
+    implementation("org.litote.kmongo:kmongo-coroutine:4.11.0")
+
     testImplementation("io.ktor:ktor-server-tests:2.3.7")
     testImplementation("org.jetbrains.kotlin:kotlin-test:1.9.20")
+    testImplementation("io.ktor:ktor-server-test-host:2.3.7")
 }

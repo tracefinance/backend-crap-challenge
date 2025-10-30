@@ -1,20 +1,37 @@
-# 🚀 Back-end Challenge — Payment API
+# 🚨 Payment API - Exemplo com Problemas Intencionais
 
-Desafio para avaliar engenheiros(as) back-end na Trace Finance.
+Esta é uma implementação **propositalmente problemática** de uma API de pagamentos usando **Kotlin + Ktor + MongoDB** para ser usada como exemplo em entrevistas técnicas.
 
-## 📋 Sobre este Repositório
+## 🚀 Como Executar
 
-Este repositório contém um **scaffold mínimo** usando **Kotlin + Ktor** para facilitar a realização do teste.
+### Pré-requisitos
+- Docker e Docker Compose
+- JDK 17+ (para desenvolvimento local)
 
-### 🔀 Opções para iniciar:
+### Executando com Docker
+```bash
+# Subir a aplicação completa (API + MongoDB)
+docker-compose up --build
 
-1. **Usar o scaffold**: Faça um **fork** deste repositório e implemente a solução sobre a base existente
-2. **Projeto novo**: Crie um projeto completamente novo do zero (também é permitido)
+# A API estará disponível em http://localhost:8080
+```
 
-O scaffold inclui:
-- ✅ Configuração básica do Ktor com Jackson
-- ✅ Estrutura de rotas (endpoints vazios)
-- ✅ Build Gradle configurado
+### Executando Localmente (Desenvolvimento)
+```bash
+# 1. Subir apenas o MongoDB
+docker-compose up mongodb -d
+
+# 2. Executar a aplicação
+./gradlew run
+```
+
+## 🔧 Stack Técnica
+
+- ✅ **Kotlin + Ktor** - Framework web
+- ✅ **MongoDB** - Banco de dados  
+- ✅ **Koin** - Injeção de dependência
+- ✅ **KMongo** - Driver MongoDB para Kotlin
+- ✅ **Docker Compose** - Orquestração de containers
 
 ---
 
